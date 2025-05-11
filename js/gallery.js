@@ -89,7 +89,7 @@ gallery.append(...items);
 gallery.addEventListener("click", (evt) => {
   if (evt.target.nodeName === "IMG") {
     const instanceBtnClosing = (evt) => {
-      if (evt.keyCode === 27) instance.close();
+      if (evt.code === "Escape") instance.close();
     };
     const instance = basicLightbox.create(
       `<img class="modal-img" src="${
